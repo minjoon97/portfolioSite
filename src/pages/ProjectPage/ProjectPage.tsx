@@ -53,7 +53,7 @@ const ProjectPage = () => {
                     <span className={styles.gdwebLogoWrapper}>
                       {item[2] ? (
                         <img
-                          src="public\gdweb_logo.png"
+                          src="/gdweb_logo.png"
                           className={styles.gdwebLogo}
                         ></img>
                       ) : (
