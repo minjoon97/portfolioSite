@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  z-index: 9999;
+}
+
+.headerMain {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+.top {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -50%);
+}
+
+.top > p {
+  font-family: "Playfair Display", serif;
+  font-size: medium;
+  font-style: italic;
+}
+
+.menuWrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
+  gap: 10px;
+}
+
+.menuWrapper > li {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.menuWrapper > li:hover {
+  cursor: pointer;
+  opacity: 1;
+}

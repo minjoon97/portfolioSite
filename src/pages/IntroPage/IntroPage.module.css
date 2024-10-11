@@ -1,0 +1,77 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 0;
+  gap: 5px;
+}
+
+.titleLogo {
+  padding-bottom: 20px;
+}
+
+.titleLogo > img {
+  width: 100px;
+}
+
+.title > span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: 0.8;
+  letter-spacing: 3px;
+}
+
+.title > p {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.introContents {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.introContents h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.skillTitle {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.skillWrapper,
+.workWrapper {
+  padding-bottom: 50px;
+}
+
+.eduWrapper {
+  padding-bottom: 150px;
+}
+
+.skillWrapper > p {
+  padding: 1rem;
+}
+
+.workWrapper li,
+.eduWrapper li {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workWrapper li > span,
+.eduWrapper li > span {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}

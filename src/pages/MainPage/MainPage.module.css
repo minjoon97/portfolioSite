@@ -1,0 +1,113 @@
+.contents {
+  margin: 0 auto;
+  padding-top: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 190px;
+  height: 190px;
+  background-color: #3700be;
+  border-radius: 190px;
+  transform: translate(40px, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  transition: 0.2s;
+}
+
+.circle:hover {
+  cursor: pointer;
+  background-color: #1d4841;
+}
+
+.circle:hover > span {
+  color: #f8d53b;
+}
+
+.circleEng {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f47d3c;
+}
+
+.circleKor {
+  font-size: 14px;
+  color: #f47d3c;
+  opacity: 0.8;
+}
+
+.triangle {
+  width: 210px;
+  height: 180px;
+  background-color: #eeeade;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: translate(0, 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  transition: 0.2s;
+}
+
+.triangle:hover {
+  cursor: pointer;
+  background-color: #f8f608;
+}
+
+.triangle:hover > span {
+  color: #fc0300;
+}
+
+.triangleEng {
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #3201b2;
+}
+
+.triangleKor {
+  font-size: 14px;
+  color: #3201b2;
+}
+
+.square {
+  width: 180px;
+  height: 180px;
+  background-color: #7b3ddc;
+  transform: rotate(-18deg) translate(-30px, -30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  transition: 0.2s;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.square:hover > span {
+  color: #4ed52a;
+}
+
+.squareEng {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: white;
+}
+
+.squareKor {
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+}

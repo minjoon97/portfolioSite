@@ -1,0 +1,103 @@
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.projectDev {
+  padding-top: 200px;
+}
+
+.projectDesig {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.projectDev li,
+.projectDesig li {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.on .itemTop {
+  padding-bottom: 20px;
+}
+
+.projectDev li:hover,
+.projectDesig li:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.gdwebLogoWrapper {
+  padding-left: 10px;
+}
+
+.gdwebLogo {
+  width: 10px;
+}
+
+.date {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.on .detail {
+  display: block;
+}
+
+.detail {
+  display: none;
+}
+
+.gdweb {
+  font-size: 0.9rem;
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+.contribute {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.gdwebNo {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.siteBtn {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  border-radius: 50px;
+  margin-top: 30px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siteBtn:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
