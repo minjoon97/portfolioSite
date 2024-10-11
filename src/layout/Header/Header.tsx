@@ -18,7 +18,7 @@ const Header = () => {
       <div className={styles.top}>
         <Link to="/">
           <h1 className={styles.logo}>
-            <img src="/logo.png"></img>
+            <img src="public\logo.png"></img>
           </h1>
         </Link>
         <p>710.</p>
