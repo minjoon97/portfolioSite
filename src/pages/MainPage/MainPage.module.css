@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 600px;
+  width: 90%;
 }
 
 .circle {
@@ -110,4 +112,21 @@
   font-size: 14px;
   color: white;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .contents {
+    flex-direction: column;
+    padding-top: 150px;
+  }
+  .circle {
+    transform: translate(-30px, 40px);
+  }
+  .triangle {
+    transform: rotate(15deg) translate(60px, -10px);
+  }
+
+  .square {
+    transform: rotate(-15deg) translate(0, 20px);
+  }
 }

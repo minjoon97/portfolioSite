@@ -16,15 +16,19 @@ const Header = () => {
   return (
     <header className={`${mainState ? styles.headerMain : styles.header}`}>
       <div className={styles.top}>
-        <Link to="/">
+        <Link to="/" className={styles.link}>
           <h1 className={styles.logo}>
             <img src="logo.png"></img>
           </h1>
         </Link>
         <p>710.</p>
         <ul className={styles.menuWrapper}>
-          <li>소개</li>
-          <li>프로젝트</li>
+          <Link to="/intro" className={styles.link}>
+            <li>소개</li>
+          </Link>
+          <Link to="/project" className={styles.link}>
+            <li>프로젝트</li>
+          </Link>
           <li>연락처</li>
         </ul>
       </div>
