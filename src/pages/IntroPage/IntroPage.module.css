@@ -39,6 +39,10 @@
   padding-bottom: 20px;
 }
 
+.skillWrapper > p {
+  line-height: 22px;
+}
+
 .skillTitle {
   display: inline-block;
   padding-top: 10px;
