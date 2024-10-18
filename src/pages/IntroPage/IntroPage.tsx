@@ -16,7 +16,7 @@ const IntroPage = () => {
           <span className={styles.skillTitle}>Dev</span>
           <p>
             HTML / CSS / Javascript / Typescript / React / StyledComponents /
-            Vite
+            Zustand / Vite
           </p>
           <span className={styles.skillTitle}>Others</span>
           <p>Photoshop / Illustrator / Figma / XD / Tableau / Slack</p>
