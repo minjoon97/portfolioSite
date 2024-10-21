@@ -85,6 +85,12 @@ const ProjectPage = () => {
                 <span className={styles.date}>2024.08</span>
               </p>
             </li>
+            <li>
+              <p className={styles.itemTop}>
+                야!소풍어때?
+                <span className={styles.date}>2024.10</span>
+              </p>
+            </li>
           </ul>
         </div>
         <div className={styles.projectDesig}>
