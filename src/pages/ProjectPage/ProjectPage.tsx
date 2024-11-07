@@ -1,74 +1,13 @@
 import styles from "./ProjectPage.module.css";
 import { useState } from "react";
-
-interface Project {
-  title: string;
-  date: string;
-  isAwarded: boolean;
-  contribution: string;
-  url: string;
-}
+import { projectDesignList } from "../../data/project-design-list";
+import { projectDevList } from "../../data/project-dev-list";
+import DevProjectModal from "../../components/DevProjectModal/DevProjectModal";
 
 const ProjectPage = () => {
-  const projectDesignList: Project[] = [
-    {
-      title: "29초영화제",
-      date: "2023.07",
-      isAwarded: true,
-      contribution: "서브페이지 20%",
-      url: "https://www.29sfilm.com/",
-    },
-    {
-      title: "Jx금속",
-      date: "2023.08",
-      isAwarded: false,
-      contribution: "메인페이지 100% / 서브페이지 60%",
-      url: "https://www.nmmk.jx-group.co.kr/",
-    },
-    {
-      title: "서울뮤직페스티벌2023",
-      date: "2023.08",
-      isAwarded: false,
-      contribution: "메인페이지 100% / 서브페이지 50%",
-      url: "http://www.seoulmusicfestival.co.kr/kor",
-    },
-    {
-      title: "세명테크",
-      date: "2023.10",
-      isAwarded: true,
-      contribution: "서브페이지 80%",
-      url: "https://www.semyungtech.com/kor/index.php#close",
-    },
-    {
-      title: "삼녹",
-      date: "2023.10",
-      isAwarded: true,
-      contribution: "메인페이지 100%",
-      url: "https://samnok.co.kr/",
-    },
-    {
-      title: "메타스카이",
-      date: "2023.12",
-      isAwarded: true,
-      contribution: "메인페이지 100%, 서브페이지 100%",
-      url: "https://weecoda.com/kor/",
-    },
-    {
-      title: "PNK디자인",
-      date: "2024.01",
-      isAwarded: false,
-      contribution: "메인페이지 100%",
-      url: "https://p-kdesign.co.kr/",
-    },
-    {
-      title: "이안컴퍼니",
-      date: "2024.04",
-      isAwarded: false,
-      contribution: "메인페이지 100%",
-      url: "https://ianncompany.co.kr/",
-    },
-  ];
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [clickedData, setClickedData] = useState<number>(0);
+  const [modalState, setModalState] = useState(false);
 
   const handleClick = (index: number) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -79,18 +18,20 @@ const ProjectPage = () => {
         <div className={styles.projectDev}>
           <h2 className={styles.title}>Project-Development</h2>
           <ul>
-            <li>
-              <p className={styles.itemTop}>
-                CINE6IX
-                <span className={styles.date}>2024.08</span>
-              </p>
-            </li>
-            <li>
-              <p className={styles.itemTop}>
-                야!소풍어때?
-                <span className={styles.date}>2024.10</span>
-              </p>
-            </li>
+            {projectDevList.map((item, index) => (
+              <li
+                key={index}
+                onClick={() => {
+                  setClickedData(index);
+                  setModalState(true);
+                }}
+              >
+                <p className={styles.itemTop}>
+                  {item.title}
+                  <span className={styles.date}>{item.date}</span>
+                </p>
+              </li>
+            ))}
           </ul>
         </div>
         <div className={styles.projectDesig}>
@@ -104,7 +45,7 @@ const ProjectPage = () => {
                 }}
                 className={activeIndex === index ? styles.on : ""}
               >
-                <p className={styles.itemTop}>
+                <div className={styles.itemTop}>
                   <div>
                     {item.title}
                     <span className={styles.gdwebLogoWrapper}>
@@ -120,7 +61,7 @@ const ProjectPage = () => {
                   </div>
 
                   <span className={styles.date}>{item.date}</span>
-                </p>
+                </div>
                 <div className={styles.detail}>
                   <div
                     className={item.isAwarded ? styles.gdweb : styles.gdwebNo}
@@ -144,6 +85,11 @@ const ProjectPage = () => {
           </ul>
         </div>
       </section>
+      <DevProjectModal
+        clickedData={clickedData}
+        modalState={modalState}
+        setModalState={setModalState}
+      ></DevProjectModal>
     </>
   );
 };
