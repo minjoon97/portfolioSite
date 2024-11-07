@@ -112,8 +112,9 @@ Error generating stack: `+o.message+`
   top: 0;
   left: 0;
   background-color: black;
+  transition: 0.2s;
   display: ${e=>e.modalState===!0?"block":"none"};
-  opacity: 0.8;
+  opacity: ${e=>e.modalState===!0?"0.8":"0"};
 `,ig=Jr.div`
   display: flex;
   justify-content: space-between;
