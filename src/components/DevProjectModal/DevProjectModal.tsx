@@ -29,7 +29,7 @@ const DevProjectModal: React.FC<DevProjectModalProps> = ({
               setModalState(false);
             }}
           >
-            x
+            <img src="closeBtn.svg" alt="" />
           </span>
         </ModalTop>
         <p>{projectDevInfo[clickedData].title}</p>
