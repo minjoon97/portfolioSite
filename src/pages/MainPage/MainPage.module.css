@@ -121,13 +121,19 @@
     padding-bottom: 150px;
   }
   .circle {
+    width: 160px;
+    height: 160px;
     transform: translate(-30px, 40px);
   }
   .triangle {
-    transform: rotate(15deg) translate(60px, -10px);
+    width: 180px;
+    height: 160px;
+    transform: rotate(15deg) translate(60px, -25px);
   }
 
   .square {
-    transform: rotate(-15deg) translate(0, 20px);
+    width: 160px;
+    height: 160px;
+    transform: rotate(-15deg) translate(0, 5px);
   }
 }
