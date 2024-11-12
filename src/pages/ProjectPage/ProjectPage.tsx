@@ -52,6 +52,7 @@ const ProjectPage = () => {
                       {item.isAwarded ? (
                         <img
                           src="gdweb_logo.png"
+                          alt="gdweb_logo"
                           className={styles.gdwebLogo}
                         ></img>
                       ) : (

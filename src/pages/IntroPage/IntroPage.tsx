@@ -5,7 +5,7 @@ const IntroPage = () => {
     <>
       <header className={styles.title}>
         <h2 className={styles.titleLogo}>
-          <img src="logo_green.png"></img>
+          <img src="logo_green.png" alt="profile_logo"></img>
         </h2>
         <span>kimminjoon</span>
         <p>Frontend Developer</p>

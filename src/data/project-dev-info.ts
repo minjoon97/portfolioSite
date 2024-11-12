@@ -26,7 +26,6 @@ export const projectDevInfo: ProjectDevInfoType[] = [
     population: "5인 팀프로젝트",
     tool: "React / TypeScript / Zustand / StyledComponents",
     info: "개인의 감정을 담은 일기를 작성하면 AI가 노래를 추천해줌으로서 함께 포스팅하고 공유할 수 있는 마이크로블로그.",
-    siteUrl:
-      "http://moodi-devcourese-3team.s3-website.ap-northeast-2.amazonaws.com/",
+    siteUrl: "https://d1ezl5r2x1hboe.cloudfront.net",
   },
 ];
