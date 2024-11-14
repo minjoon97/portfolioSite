@@ -1,10 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+
 import "./styles/myreset.css";
 import "./styles/font.css";
-import { Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import IntroPage from "./pages/IntroPage/IntroPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import DetailPage from "./pages/DetailPage/DetailPage";
 import Header from "./layout/Header/Header";
+import About from "./layout/About/About";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 //--메인--
 //세개의 포인트컬러 원 삼각형 네모 메뉴 - 소개, 프로젝트, contact
@@ -23,10 +27,16 @@ function App() {
   return (
     <>
       <Header></Header>
+      <About></About>
       <Routes>
         <Route path="/" element={<MainPage></MainPage>}></Route>
         <Route path="/intro" element={<IntroPage></IntroPage>}></Route>
         <Route path="/project" element={<ProjectPage></ProjectPage>}></Route>
+        <Route
+          path="/detail/:index"
+          element={<DetailPage></DetailPage>}
+        ></Route>
+        <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
       </Routes>
     </>
   );

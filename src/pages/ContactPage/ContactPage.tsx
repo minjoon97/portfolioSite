@@ -1,7 +1,7 @@
-import styles from "./ContactPage.module.css";
+import { Wrapper } from "./ContactPageCss";
 
 const ContactPage = () => {
-  return <div className={styles.wrapper}></div>;
+  return <Wrapper></Wrapper>;
 };
 
 export default ContactPage;

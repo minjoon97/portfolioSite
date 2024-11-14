@@ -23,9 +23,16 @@ export const projectDevInfo: ProjectDevInfoType[] = [
   },
   {
     title: "Moodi",
-    population: "5인 팀프로젝트",
+    population: "백엔드1인 프론트엔드4인 팀프로젝트",
     tool: "React / TypeScript / Zustand / StyledComponents",
     info: "개인의 감정을 담은 일기를 작성하면 AI가 노래를 추천해줌으로서 함께 포스팅하고 공유할 수 있는 마이크로블로그.",
     siteUrl: "https://d1ezl5r2x1hboe.cloudfront.net",
+  },
+  {
+    title: "손모아",
+    population: "백엔드4인 프론트엔드3인 팀프로젝트",
+    tool: "React / TypeScript / React Query / Zustand / StyledComponents",
+    info: "구호활동 연결 플랫폼",
+    siteUrl: "",
   },
 ];

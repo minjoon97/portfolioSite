@@ -2,12 +2,10 @@ import styles from "./ProjectPage.module.css";
 import { useState } from "react";
 import { projectDesignList } from "../../data/project-design-list";
 import { projectDevList } from "../../data/project-dev-list";
-import DevProjectModal from "../../components/DevProjectModal/DevProjectModal";
+import { Link } from "react-router-dom";
 
 const ProjectPage = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [clickedData, setClickedData] = useState<number>(0);
-  const [modalState, setModalState] = useState(false);
 
   const handleClick = (index: number) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -19,18 +17,14 @@ const ProjectPage = () => {
           <h2 className={styles.title}>Project-Development</h2>
           <ul>
             {projectDevList.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => {
-                  setClickedData(index);
-                  setModalState(true);
-                }}
-              >
-                <p className={styles.itemTop}>
-                  {item.title}
-                  <span className={styles.date}>{item.date}</span>
-                </p>
-              </li>
+              <Link to={`/detail/${index}`} key={index}>
+                <li>
+                  <p className={styles.itemTop}>
+                    {item.title}
+                    <span className={styles.date}>{item.date}</span>
+                  </p>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -86,11 +80,6 @@ const ProjectPage = () => {
           </ul>
         </div>
       </section>
-      <DevProjectModal
-        clickedData={clickedData}
-        modalState={modalState}
-        setModalState={setModalState}
-      ></DevProjectModal>
     </>
   );
 };

@@ -29,7 +29,9 @@ const Header = () => {
           <Link to="/project" className={styles.link}>
             <li>프로젝트</li>
           </Link>
-          <li>연락처</li>
+          <Link to="/contact" className={styles.link}>
+            <li>연락처</li>
+          </Link>
         </ul>
       </div>
     </header>

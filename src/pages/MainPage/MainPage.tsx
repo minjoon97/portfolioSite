@@ -18,10 +18,12 @@ const MainPage = () => {
               <span className={styles.triangleKor}>프로젝트</span>
             </div>
           </Link>
-          <div className={styles.square}>
-            <span className={styles.squareEng}>Contact</span>
-            <span className={styles.squareKor}>연락처</span>
-          </div>
+          <Link to="/contact">
+            <div className={styles.square}>
+              <span className={styles.squareEng}>Contact</span>
+              <span className={styles.squareKor}>연락처</span>
+            </div>
+          </Link>
         </div>
       </div>
     </>
