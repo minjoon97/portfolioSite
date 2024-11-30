@@ -9,10 +9,24 @@ export const Wrapper = styled.div<{ $modalState: boolean }>`
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   z-index: 9999;
   padding: 1.5rem;
   color: white;
+
+  & > p:nth-of-type(1) {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 40px;
+  }
+
+  & > p:nth-of-type(2) {
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    line-height: 18px;
+  }
 `;
 
 //딤드배경
