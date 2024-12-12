@@ -5,6 +5,10 @@ interface ProjectDevListType {
 
 export const projectDevList: ProjectDevListType[] = [
   {
+    title: "PAS",
+    date: "2022.08",
+  },
+  {
     title: "CINE6IX",
     date: "2024.08",
   },
