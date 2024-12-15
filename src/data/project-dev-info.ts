@@ -43,10 +43,12 @@ RPA는 rest api를 기반으로 필요한 데이터정보를 키값으로 저장
     state_management_data_communication: "Fetch Api",
     library_service: "",
     tool: "Git / Github / Notion / Slack / Figma",
-    info: "TMDB Open API를 사용하여, 바닐라 자바스크립트로 개발한 프로젝트입니다.",
+    info: `TMDB Open API를 사용하여, 바닐라 자바스크립트로 개발한 프로젝트입니다.
+    사용자는 영화를 검색하고, 해당 영화에 대한 정보를 모달로 확인할 수 있으며, 최신영화 및 카테고리 별 영화를 열람할 수 있습니다.`,
     mywork: "",
-    Retrospective:
-      "Open API를 통한 데이터 요청 및 응답 처리가 주요 기술이었습니다. 모듈화가 없으니 코드의 가독성과 유지보수가 어려워짐을 느꼈습니다.",
+    Retrospective: `디자인부터 반응형ui, ajax를 활용한 기능개발까지 총 2주 정도의 시간동안 진행하였습니다.
+      Open API를 통한 데이터 요청 및 응답 처리가 주요 기술이었으며, 비동기함수들을 다루면서 promise와 async await 등에 대한 경험치를 쌓을 수 있었습니다.
+      figma와 slack을 통해 4명이 기획을 함께 진행했고, 디자인부터 개발은 각자 진행하였습니다. 배포는 github pages를 이용하였습니다.`,
     siteUrl: "https://minjoon97.github.io/CINE6IX/",
   },
   {
@@ -56,12 +58,20 @@ RPA는 rest api를 기반으로 필요한 데이터정보를 키값으로 저장
     color: ["#3B2DB5", "#D9D9D9", "#ffffff"],
     language: "TypeScript / HTML5 / CSS3",
     framework: "React / Vite",
-    state_management_data_communication: "",
+    state_management_data_communication: "Fetch Api",
     library_service: "",
     tool: "Git / Github / Notion / Slack / Figma",
-    info: "React와 TypeScript를 사용하여 전역라이브러리 없이 제작하였으며, 무한스크롤 및 찜하기 기능 등을 구현함",
+    info: `React와 TypeScript를 사용하여 제작하였으며, 무한스크롤 및 찜하기 기능 등을 구현하였습니다.
+    사용자는 축제 / 숙소 / 관광지를 지역별로 검색할 수 있으며, 마이페이지에서 자신이 찜한 아이템을 확인할 수 있습니다.`,
     mywork: "",
-    Retrospective: "",
+    Retrospective: `처음에는 전역 상태 라이브러리를 사용하지 않고, 개발을 시작하였는데, Props drilling의 지옥을 경험했습니다.
+      컴포넌트의 종속성에 따라, 많게는 6번 정도의 props drilling이 발생했고, 파일구조 또한 따로 정해놓지 않은 상태로 하다보니
+      타입을 지정하는 것 조차도 굉장히 번거롭고 오류도 많이 발생했습니다.
+      그렇게 프로젝트 기간 내에 저는 프로젝트를 마무리하기위해 코드를 더럽게 붙여나가기 시작했고, 결국 마지막까지 프로젝트를 끝마치지 못했습니다.
+      프로젝트를 제대로 마무리하고 싶었던 저는 프로젝트 기간이 끝난 뒤에, 그 다음 프로젝트 기간 사이에 저 스스로 이 프로젝트를 처음부터 다시 시작해보기로 마음먹었습니다.
+      이번에는 zustand를 사용하며 전역 상태 라이브러리의 편리함을 제대로 느낄 수 있었고, 일주일 정도의 시간을 몰두하여 짧은 기간 내에 프로젝트를 마무리 할 수 있었습니다.
+      추가적으로, 찜하기는 local Storage를 사용하였고, 데이터는 공공데이터 포털의 한국관광공사 - 국문 관광정보 서비스 Open Api를 사용하였습니다.
+      `,
     siteUrl: "https://minjoon97.github.io/yasoaV2/",
   },
   {
