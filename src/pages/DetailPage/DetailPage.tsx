@@ -53,6 +53,12 @@ const DetailPage = () => {
             </p>
           </Smdc>
         )}
+        {projectDevInfo[Number(index)].library_service && (
+          <Framework>
+            <span>라이브러리</span>
+            <p>{projectDevInfo[Number(index)].library_service}</p>
+          </Framework>
+        )}
         {projectDevInfo[Number(index)].tool && (
           <Tool>
             <span>Tool</span>
