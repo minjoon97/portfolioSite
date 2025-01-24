@@ -2,8 +2,10 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import { projectDevInfo } from "../../data/project-dev-info";
 import {
+  BtnContainer,
   Color,
   Framework,
+  GitHubBtn,
   GoBack,
   Info,
   Intro,
@@ -95,15 +97,27 @@ const DetailPage = () => {
             <p>{projectDevInfo[Number(index)].Retrospective}</p>
           </Retrospective>
         )}
-        {projectDevInfo[Number(index)].siteUrl && (
-          <a
-            href={projectDevInfo[Number(index)].siteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiteBtn>사이트 바로가기</SiteBtn>
-          </a>
-        )}
+
+        <BtnContainer>
+          {projectDevInfo[Number(index)].siteUrl && (
+            <a
+              href={projectDevInfo[Number(index)].siteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiteBtn>사이트 바로가기</SiteBtn>
+            </a>
+          )}
+          {projectDevInfo[Number(index)].githubUrl && (
+            <a
+              href={projectDevInfo[Number(index)].githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubBtn>GitHub 바로가기</GitHubBtn>
+            </a>
+          )}
+        </BtnContainer>
       </Wrapper>
     );
   }

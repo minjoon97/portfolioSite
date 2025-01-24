@@ -12,6 +12,7 @@ interface ProjectDevInfoType {
   mywork: string;
   Retrospective: string;
   siteUrl: string;
+  githubUrl: string;
 }
 
 export const projectDevInfo: ProjectDevInfoType[] = [
@@ -32,6 +33,7 @@ RPA는 rest api를 기반으로 필요한 데이터정보를 키값으로 저장
     Retrospective: `자동화 프로세스를 개발한다는 것은 단순하게 업무를 진행하는 것이 아닌, 훗날의 업무를 대체해줄 무언가를 만들어 낸다는 것에서 진보적이고 미래지향적이라고 생각했습니다.
 1인분을 하는 것이 아닌, 미래의 10인분을 위한 기반을 마련한다는 측면에서 보면, 프로그래밍이 회사에 미치는 영향이 생각보다 크다고 느꼈습니다.`,
     siteUrl: "",
+    githubUrl: "",
   },
   {
     title: "CINE6IX",
@@ -60,6 +62,7 @@ query를 이용한 api fetch를 간단하게 정리하자면, API 호출 URL을 
 백엔드가 없는 구조였기에, 한줄평같이 간단한 데이터의 저장은 네트워크요청이 필요없는 localStorage를 사용하였고, pagination은 빠른 개발보다 그 원리를 익히고자 하는 학습목적에서 라이브러리가 아닌 커스텀으로 제작하였습니다.
 figma와 slack을 통해 4명이 기획을 함께 진행했고, 디자인부터 개발은 각자 진행하였습니다. 배포는 github pages를 이용하였습니다.`,
     siteUrl: "https://minjoon97.github.io/CINE6IX/",
+    githubUrl: "https://github.com/minjoon97/CINE6IX",
   },
   {
     title: "야!소풍어때?",
@@ -91,6 +94,7 @@ Zustand를 선정한 데에는 프로젝트의 규모와 시간을 고려하여,
 추가적으로, 찜하기는 CINE6IX와 마찬가지로 local Storage를 사용하였고, 데이터는 공공데이터 포털의 한국관광공사 - 국문 관광정보 서비스 Open Api를 사용하였습니다.
       `,
     siteUrl: "https://minjoon97.github.io/yasoaV2/",
+    githubUrl: "https://github.com/minjoon97/yasoaV2",
   },
   {
     title: "Moodi",
@@ -125,6 +129,7 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
 마지막으로, 이전에는 fetch를 사용했었는데, JSON 데이터 자동 변환과 크로스브라우징 이슈를 잡기위해 axios를 도입하였습니다.
 `,
     siteUrl: "https://moodi.life/",
+    githubUrl: "https://github.com/prgrms-fe-devcourse/NFE1-1-3-MOODI",
   },
   {
     title: "손모아",
@@ -176,5 +181,7 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
 백엔드와 프론트엔드의 토큰 전달과정에서의 다양한 이슈를 접할 수 있는 유익한 경험이었다고 생각합니다.
 `,
     siteUrl: "https://www.somemore.site/",
+    githubUrl:
+      "https://github.com/prgrms-web-devcourse-final-project/WEB1_1_Bongdari_FE",
   },
 ];

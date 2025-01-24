@@ -99,8 +99,16 @@ export const Info = styled(SkillDiv)``;
 export const Mywork = styled(SkillDiv)``;
 export const Retrospective = styled(SkillDiv)``;
 
+export const BtnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 40px;
+`;
+
 export const SiteBtn = styled.span`
   display: inline-block;
+  height: 40px;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -108,9 +116,30 @@ export const SiteBtn = styled.span`
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
   transition: 0.2s;
-  position: absolute;
-  top: 250px;
-  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+`;
+
+export const GitHubBtn = styled.span`
+  display: inline-block;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     cursor: pointer;
