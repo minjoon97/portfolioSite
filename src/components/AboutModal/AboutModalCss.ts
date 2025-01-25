@@ -22,7 +22,7 @@ export const Wrapper = styled.div<{ $modalState: boolean }>`
   & > p:nth-of-type(2) {
     font-size: 14px;
     padding-bottom: 30px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 20px;
@@ -36,7 +36,7 @@ export const Wrapper = styled.div<{ $modalState: boolean }>`
   & > p:nth-of-type(3) {
     font-size: 12px;
     padding-bottom: 30px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
     font-weight: 200;
   }
 `;
