@@ -324,7 +324,7 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
   & > p:nth-of-type(2) {
     font-size: 14px;
     padding-bottom: 30px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 20px;
@@ -338,7 +338,7 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
   & > p:nth-of-type(3) {
     font-size: 12px;
     padding-bottom: 30px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
     font-weight: 200;
   }
 `,Ov=U.div`
