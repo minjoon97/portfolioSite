@@ -15,8 +15,8 @@ const IntroPage = () => {
           <h3>Skills</h3>
           <span className={styles.skillTitle}>Dev</span>
           <p>
-            HTML5 / CSS3 / Javascript / Typescript / React / Tanstack-Query
-            (React-Query) / Zustand / StyledComponents / MUI
+            HTML5 / CSS3 / Javascript / Typescript / React / Next.js /
+            Tanstack-Query (React-Query) / Zustand / StyledComponents / MUI
           </p>
           <span className={styles.skillTitle}>Infra & Tools</span>
           <p>Git / GitHub / VS Code / Vite / Slack / Postman / Swagger</p>
