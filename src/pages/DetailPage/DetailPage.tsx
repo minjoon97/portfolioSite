@@ -40,7 +40,7 @@ const DetailPage = () => {
         )}
         {projectDevInfo[Number(index)].framework && (
           <Framework>
-            <span>프레임워크</span>
+            <span>프레임워크 & 개발환경</span>
             <p>{projectDevInfo[Number(index)].framework}</p>
           </Framework>
         )}

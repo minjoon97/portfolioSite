@@ -70,9 +70,9 @@ figma와 slack을 통해 4명이 기획을 함께 진행했고, 디자인부터 
     intro: "국내 축제, 숙소 및 관광지 안내 사이트",
     color: ["#3B2DB5", "#D9D9D9", "#ffffff"],
     language: "TypeScript / HTML5 / CSS3",
-    framework: "React / Vite",
+    framework: "Vite",
     state_management_data_communication: "Zustand / Fetch Api",
-    library_service: "",
+    library_service: "React",
     tool: "Git / Github / Notion / Slack / Figma",
     info: `React와 TypeScript를 사용하여 제작하였으며, 무한스크롤 및 찜하기 기능 등을 구현하였습니다.
 
@@ -102,9 +102,10 @@ Zustand를 선정한 데에는 프로젝트의 규모와 시간을 고려하여,
     intro: "마이크로 감정 블로그",
     color: ["#FF480E", "#FFBB80", "#F8F8F8"],
     language: "TypeScript / HTML5 / CSS3",
-    framework: "React / Vite / Styled-Components",
+    framework: "Vite",
     state_management_data_communication: "Zustand / ReactQuery / axios",
-    library_service: "React Calendar / Intersection Observer",
+    library_service:
+      "React / Styled-Components / React Calendar / Intersection Observer",
     tool: "Git / Github / Notion / Slack / Postman / ESLINT / Prettier / Figma",
     info: `개인의 감정을 담은 일기를 작성하면 AI가 노래를 추천해줌으로서 함께 포스팅하고 공유할 수 있는 마이크로블로그입니다.
     
@@ -137,11 +138,11 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
     intro: "구호활동 연결 플랫폼",
     color: ["#62a6ff", "#2382ff", "#ffd900"],
     language: "TypeScript / HTML5 / CSS3",
-    framework: "React / Vite / Styled-Components",
+    framework: "Vite",
     state_management_data_communication:
       "Zustand / ReactQuery / MSW / SSE / axios / axios-intercepter / persist",
     library_service:
-      "KakaoMaps / React DatePicker / Lodash / Intersection Observer / React Toastify / EventSourcePollyfill",
+      "React / Styled-Components / KakaoMaps / React DatePicker / Lodash / Intersection Observer / React Toastify / EventSourcePollyfill",
     tool: "Git / Github / Notion / Slack / Swagger / ESLINT / Prettier / Figma",
     info: `손모아의 목표는 사회지원 활동 참여를 쉽게 만들자 입니다. 전화, 방문 등 기존의 복잡한 절차의 불편함을 해소해 접근성을 향상 시키기 위해 이 프로젝트를 기획하였습니다.
 도움이 필요하지만 모집 방법이 게시글 등록이 전부였던 기관들에게 봉사자에게 직접 도움을 요청할 수 있게 하여 봉사자와 기관 간의 커뮤니케이션을 활성화할 수 있고, 봉사 시간에 따라 티어를 부여하고 "이 주의 봉사왕" 랭킹과 같은 게이미피케이션(Gamification)을 통해 봉사자들은 성취감을 느낄 수 있습니다.
@@ -185,5 +186,23 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
     siteUrl: "https://www.somemore.site/",
     githubUrl:
       "https://github.com/prgrms-web-devcourse-final-project/WEB1_1_Bongdari_FE",
+  },
+  {
+    title: "MSN",
+    population: "풀스택 개인프로젝트",
+    intro: "마이크로 쇼핑몰",
+    color: ["#000000", "#FB1A2E", "#ffffff"],
+    language: "TypeScript / HTML5 / CSS3",
+    framework: "Next.js / Vite",
+    state_management_data_communication: "Recoil",
+    library_service: "Firebase / Swiper",
+    tool: "Git / Github / Firebase / Figma",
+    info: `풀스택 마이크로 쇼핑몰 개발중
+`,
+    mywork: "",
+    Retrospective: `
+`,
+    siteUrl: "/",
+    githubUrl: "/",
   },
 ];

@@ -19,7 +19,9 @@ const IntroPage = () => {
             Tanstack-Query (React-Query) / Zustand / StyledComponents / MUI
           </p>
           <span className={styles.skillTitle}>Infra & Tools</span>
-          <p>Git / GitHub / VS Code / Vite / Slack / Postman / Swagger</p>
+          <p>
+            Git / GitHub / firebase / Vercel / Vite / Slack / Postman / Swagger
+          </p>
           <span className={styles.skillTitle}>Others</span>
           <p>Photoshop / Illustrator / Figma / XD / Tableau / Slack</p>
         </div>

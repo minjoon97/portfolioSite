@@ -24,4 +24,8 @@ export const projectDevList: ProjectDevListType[] = [
     title: "손모아",
     date: "2024.11",
   },
+  {
+    title: "MSN",
+    date: "2025.03",
+  },
 ];
