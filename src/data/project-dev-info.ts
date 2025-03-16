@@ -201,12 +201,39 @@ React-query는 무한스크롤 구현을 위하여 도입하였는데, key값을
     language: "TypeScript / HTML5 / CSS3",
     framework: "Next.js",
     state_management_data_communication: "Recoil -> Zustand, Next API",
-    library_service: "Firebase / Swiper",
+    library_service: "Firebase / Swiper / formidable",
     tool: "Firebase / Git / Github / Figma",
-    info: `풀스택 마이크로 쇼핑몰
+    info: `Next와 Firebase를 활용하여 제작한 간단한 쇼핑몰 프로젝트입니다.
+
+주요기능
+
+사용자/관리자
+🔍 검색을 통한 물품 검색
+💗 찜하기 기능
+🛒 장바구니 기능
+💳 결제 기능
+🙎‍♂️ 마이페이지 기능 (구매내역 조회 가능)
+
+관리자
+📝 컨텐츠 등록 및 삭제
 `,
     mywork: "",
     Retrospective: `
+쇼핑몰의 특성상, SEO와 초기로딩속도가 중요하다는 생각이 들어, 이번 기회에 SSR을 경험해보고자 Next.js를 선택하여 프로젝트를 진행하게 됐습니다.
+파일을 통한 라우팅 처리가 편리하다는 생각이 들었고, 최적화 측면에서 일반 react를 사용할 때보다 확연히 성능이 개선된 점을 알 수 있었습니다.
+
+Next에서는 useState, useEffect, 커스텀 훅들을 많이 사용하다보니 클라이언트 컴포넌트를 너무 많이 사용하여, 번들 크기 확장, 하이드레이션 이슈 등 서버컴포넌트와 비교하여 성능이 최적화되지 못하는 문제가 발생했습니다. 이를 통해 Next에서는 훅의 이용을 구조화해서 클라이언트 컴포넌트와 서버 컴포넌트를 효과적으로 혼합하는 것이 필요하다는 것을 배웠습니다.
+
+평소에는 styledcomponent를 즐겨사용하는데, styledcomponent는 클라이언트 컴포넌트에서만 동작하다보니 수많은 파일들을 클라이언트 컴포넌트로 변경해야했고, SSR 성능 최적화를 위해서 module css를 사용하기로 결정했습니다.
+
+서버리스 아키텍쳐 구축을 위하여 비교적 next와 연동이 간단한 firebase를 사용하였습니다. 컨텐츠 관리를 위하여 DB를 실시간으로 업데이트하는 기술을 습득했고, 이메일/비밀번호 인증 등 사용자 인증 시스템 구현을 위하여 firebase authentication를 사용하였습니다. 결제기능을 구현하기 위하여 api가 필요했는데, next api를 사용하여 간단한 백엔드를 구축한 뒤, api를 fetch하여 결제 성공 페이지로 리다이렉트 처리하는 방식으로 처리하였습니다.
+
+상태관리 라이브러리로는 처음에는 recoil을 선택했습니다. react를 만든 meta에서 제작한 상태관리 라이브러리로서 호환성 부분에서 장점이 있을까 싶어서 recoil을 사용해봤습니다. 하지만 next의 app router내에서 react 내부api와의 호환성 문제가 발생했고, 저는 react18-19버전이 recoil과 더이상 호환이 되지 않는다는 사실을 깨달았습니다. (recoil의 state를 가져오는 부분에서 '__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED' 를 포함한 에러코드가 발생했고, 서칭 결과, react팀이 내부 api를 변경하면서 recoil이 제대로 작동이 불가능한 환경이 됐다는 것을 알 수 있었습니다.) Next.js 13 이상에서는 App Router가 React의 서버 컴포넌트를 기반으로 구축되었기 때문에, 이러한 호환성 문제가 더 두드러진다는 것 또한 문제였습니다.
+다른 상태관리 라이브러리를 사용하는 방법과 react를 다운그레이드 하는 방법이 있었는데, react를 다운그레이드 한다면 react의 최신버전에 의존하는 next의 최신기능들을 사용할 수 없었기에, zustand를 사용하는 방향으로 결정했습니다.
+
+라우터 이동 시, 데이터 전달을 위하여 url query파라미터로 데이터를 전달시키는 방법을 사용하려고 하였으나, 검색 엔진의 인덱싱 방식과 크롤링 제한 문제, 캐싱 문제 등으로 인해 SEO에 영향을 끼친다는 점을 고려하여, 전역상태에 데이터를 저장해서 공유하는 것으로 결정하였습니다.
+
+결과적으로 lighthouse의 퍼포먼스와 접근성 점수 95점과 Best practices와 SEO 점수 100점의 최적화된 성능으로 쇼핑몰 프로젝트를 마칠 수 있었습니다.
 `,
     siteUrl: "https://micro-shopping-next.vercel.app/",
     githubUrl: "https://github.com/minjoon97/MicroShoppingNext",
